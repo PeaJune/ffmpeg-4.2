@@ -1,0 +1,14 @@
+prefix=/home/gjhou/gitlab/ffmpeg/install/x86
+exec_prefix=${prefix}
+libdir=/home/gjhou/gitlab/ffmpeg/install/x86/lib
+includedir=/home/gjhou/gitlab/ffmpeg/install/x86/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 56.43.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil 
+Libs.private: -pthread -lm
+Cflags: -I${includedir}

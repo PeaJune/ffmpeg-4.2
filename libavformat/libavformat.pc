@@ -1,0 +1,14 @@
+prefix=/home/gjhou/gitlab/ffmpeg/install/x86
+exec_prefix=${prefix}
+libdir=/home/gjhou/gitlab/ffmpeg/install/x86/lib
+includedir=/home/gjhou/gitlab/ffmpeg/install/x86/include
+
+Name: libavformat
+Description: FFmpeg container format library
+Version: 58.43.100
+Requires: 
+Requires.private: libavcodec >= 58.82.100, libswresample >= 3.6.100, libavutil >= 56.43.100
+Conflicts:
+Libs: -L${libdir}  -lavformat 
+Libs.private: -lm
+Cflags: -I${includedir}

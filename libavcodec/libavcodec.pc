@@ -1,0 +1,14 @@
+prefix=/home/gjhou/gitlab/ffmpeg/install/x86
+exec_prefix=${prefix}
+libdir=/home/gjhou/gitlab/ffmpeg/install/x86/lib
+includedir=/home/gjhou/gitlab/ffmpeg/install/x86/include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 58.82.100
+Requires: 
+Requires.private: libswresample >= 3.6.100, libavutil >= 56.43.100
+Conflicts:
+Libs: -L${libdir}  -lavcodec 
+Libs.private: -pthread -lm
+Cflags: -I${includedir}
